@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="emp" class="com.javatpoint.Employee">
+		<constructor-arg value="101"></constructor-arg>
+		<constructor-arg value="Sachin"></constructor-arg>
+		<constructor-arg ref="address1"></constructor-arg>
+	</bean>
+
+	<bean id="address1" class="com.javatpoint.Address">
+		<constructor-arg value="21,Lohianagar"></constructor-arg>
+		<constructor-arg value="Ghaziabad"></constructor-arg>
+		<constructor-arg value="UP"></constructor-arg>
+		<constructor-arg value="USA"></constructor-arg>		
+	</bean>
+
+</beans>
